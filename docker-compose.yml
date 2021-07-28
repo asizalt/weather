@@ -1,10 +1,14 @@
 version: "3"
 services:
-    metricsweb:
-        container_name: metricsweb
+    web:
+        container_name: web
         build: .
+        volumes:
+            - .:/app
         ports:
-        - 5000:5000
+            - 5000:5000
+        env_file:
+            - 'env-dev'
         depends_on:
         - influxdb
     grafana:
