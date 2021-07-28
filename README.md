@@ -20,6 +20,7 @@ Once you enter Grafana via `localhost:3000`, credentials are `admin/admin`. it w
 Go to `Configurations -> Data Sources` and add influxdb. after that in the URL add the fallowing: `http://influxdb:8086` and
 The database is `metrics`
 
+![Screenshot](influxdb.png)
 
 
 
