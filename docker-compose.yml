@@ -30,7 +30,6 @@ services:
     telegraf:
         container_name: telegraf
         image: telegraf
-        container_name: telegraf
         restart: always
         depends_on:
         - influxdb
